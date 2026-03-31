@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIBP Innovation Retreat 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ======== NAVBAR ======== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="https://images.squarespace-cdn.com/content/v1/6316ec4bc3127239ee7b0786/14bbb52a-b5a5-4e2b-bd93-0d498c5c8e66/AIBP+Innovation+Retreat+2026.png" alt="AIBP Innovation Retreat 2026" />
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#participants">Attendees</a></li>
+        <li><a href="#recap">2024 Recap</a></li>
+        <li><a href="#activities">Activities</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ======== HERO ======== -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tag">AIBP Innovation Retreat 2026</p>
+      <h1 class="hero-title">Shaping the Future<br/>of Business &amp; Technology</h1>
+      <p class="hero-subtitle">April 27 &ndash; 29, 2026</p>
+      <div class="hero-actions">
+        <a href="#agenda" class="btn btn-primary">View Agenda</a>
+        <a href="#participants" class="btn btn-outline">See Attendees</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== AGENDA ======== -->
+  <section class="section" id="agenda">
+    <div class="container">
+      <h2 class="section-title">Retreat Agenda</h2>
+      <p class="section-subtitle">Three days of insights, connections, and innovation</p>
+
+      <div class="agenda-tabs">
+        <button class="active" data-day="2026-04-27">
+          <span class="tab-label">Day 1</span>
+          <span class="tab-date">Apr 27</span>
+        </button>
+        <button data-day="2026-04-28">
+          <span class="tab-label">Day 2</span>
+          <span class="tab-date">Apr 28</span>
+        </button>
+        <button data-day="2026-04-29">
+          <span class="tab-label">Day 3</span>
+          <span class="tab-date">Apr 29</span>
+        </button>
+      </div>
+
+      <div id="agenda-container">
+        <div class="loading-spinner"><div class="spinner"></div><p>Loading agenda...</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== ATTENDEES ======== -->
+  <section class="section section-alt" id="participants">
+    <div class="container">
+      <h2 class="section-title">Invited Participants</h2>
+      <p class="section-subtitle">Leaders from across Southeast Asia</p>
+
+      <div class="filter-bar">
+        <div class="filter-group">
+          <label for="countryFilter">Country</label>
+          <select id="countryFilter">
+            <option value="ALL">All Countries</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="sectorFilter">Sector</label>
+          <select id="sectorFilter">
+            <option value="ALL">All Sectors</option>
+            <option value="Banking & Financial Services">Banking & Financial Services</option>
+            <option value="Distribution, Transportation & Logistics">Distribution, Transportation & Logistics</option>
+            <option value="Energy & Utilities">Energy & Utilities</option>
+            <option value="Industrials & Manufacturing">Industrials & Manufacturing</option>
+            <option value="Public Services">Public Services</option>
+            <option value="Retail">Retail</option>
+            <option value="Real Estate">Real Estate</option>
+            <option value="Telecommunications">Telecommunications</option>
+            <option value="Technology">Technology</option>
+            <option value="Conglomerate">Conglomerate</option>
+            <option value="Association">Association</option>
+            <option value="Vendor">Vendor</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="attendees-container" class="attendees-grid"></div>
+
+      <div class="read-more-container">
+        <button id="toggleCards" class="btn btn-outline">Show More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== 2024 RECAP ======== -->
+  <section class="section" id="recap">
+    <div class="container">
+      <h2 class="section-title">2024 Retreat Recap</h2>
+      <p class="section-subtitle">A look back at last year's highlights</p>
+
+      <div class="recap-embed">
+        <div class="cleverstory__live_element"
+             data-live-element="https://aibp.iotbusiness-platform.com/embedded/6971c6021e548b1afba6850f"
+             data-id="6971c6021e548b1afba6850f"
+             data-width="100%"
+             data-height="815px">
+          <div id="page-6971c6021e548b1afba6850f" style="display:none;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== UPCOMING ACTIVITIES ======== -->
+  <section class="section section-alt" id="activities">
+    <div class="container">
+      <h2 class="section-title">Upcoming Activities</h2>
+      <p class="section-subtitle">Explore what's next from AIBP</p>
+
+      <div id="recommended-carousel-b">
+        <div class="loading-spinner"><div class="spinner"></div><p>Loading activities...</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 AIBP Innovation Retreat. All rights reserved.</p>
+      <p><a href="https://www.aibp.sg" target="_blank" rel="noopener">www.aibp.sg</a></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="app.js"></script>
+
+  <!-- Cleverstory embed -->
+  <script>
+    !function(){var t=window,e=t.Cleverstory;if("function"==typeof e)e();else{var a=document,n=function(){var t=a.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://editor.cleverstory.io/scripts/embed_page.min.js";var e=a.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)};t.attachEvent?t.attachEvent("onload",n):t.addEventListener("load",n,!1)}}();
+  </script>
+</body>
+</html>
