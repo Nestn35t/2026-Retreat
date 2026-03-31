@@ -290,12 +290,14 @@ function renderCarouselB(events) {
       if (!image) image = getDefaultImageByEventType(e["Event Type"]);
       var fallback = getDefaultImageByEventType(e["Event Type"]);
 
+      var eventUrl = (e["Event URL"] || "").trim();
+      var href = eventUrl
+        ? "https://www.aibp.sg/" + getDetailsPathB(e["Event Type"]) + "?eventUrl=" + encodeURIComponent(eventUrl)
+        : "#";
+      var targetAttr = eventUrl ? ' target="_blank" rel="noopener"' : "";
+
       return (
-        '<a class="swiper-slide event-card" href="https://www.aibp.sg/' +
-        getDetailsPathB(e["Event Type"]) +
-        "?eventUrl=" +
-        encodeURIComponent(e["Event URL"] || "") +
-        '" target="_blank" rel="noopener">' +
+        '<a class="swiper-slide event-card" href="' + href + '"' + targetAttr + '>' +
         '<div class="event-image">' +
         '<img src="' + image + '" loading="lazy" onerror="this.onerror=null;this.src=\'' + fallback + '\'">' +
         "</div>" +
