@@ -292,7 +292,7 @@ function renderCarouselB(events) {
 
       var eventUrl = (e["Event URL"] || "").trim();
       var href = eventUrl
-        ? "https://www.aibp.sg/" + getDetailsPathB(e["Event Type"]) + "?utm_term=" + encodeURIComponent(eventUrl)
+        ? "https://www.aibp.sg/" + getDetailsPathB(e["Event Type"]) + "?eventUrl=" + encodeURIComponent(eventUrl)
         : "#";
       var targetAttr = eventUrl ? ' target="_blank" rel="noopener"' : "";
 
