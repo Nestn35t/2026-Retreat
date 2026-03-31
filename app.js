@@ -291,11 +291,11 @@ function renderCarouselB(events) {
       var fallback = getDefaultImageByEventType(e["Event Type"]);
 
       return (
-        '<a class="swiper-slide event-card" href="/' +
+        '<a class="swiper-slide event-card" href="https://www.aibp.sg/' +
         getDetailsPathB(e["Event Type"]) +
         "?eventUrl=" +
         encodeURIComponent(e["Event URL"] || "") +
-        '">' +
+        '" target="_blank" rel="noopener">' +
         '<div class="event-image">' +
         '<img src="' + image + '" loading="lazy" onerror="this.onerror=null;this.src=\'' + fallback + '\'">' +
         "</div>" +
