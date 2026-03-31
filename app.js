@@ -318,15 +318,16 @@ function renderCarouselB(events) {
     slidesPerView: 4,
     slidesPerGroup: 4,
     spaceBetween: 18,
+    grabCursor: true,
     navigation: {
       nextEl: ".swiper-button-next-b",
       prevEl: ".swiper-button-prev-b",
     },
     breakpoints: {
-      0: { slidesPerView: 1, slidesPerGroup: 1 },
-      480: { slidesPerView: 2, slidesPerGroup: 2 },
-      768: { slidesPerView: 3, slidesPerGroup: 3 },
-      1024: { slidesPerView: 4, slidesPerGroup: 4 },
+      0: { slidesPerView: 1.2, slidesPerGroup: 1, spaceBetween: 12 },
+      480: { slidesPerView: 2.2, slidesPerGroup: 2, spaceBetween: 14 },
+      768: { slidesPerView: 3, slidesPerGroup: 3, spaceBetween: 16 },
+      1024: { slidesPerView: 4, slidesPerGroup: 4, spaceBetween: 18 },
     },
   });
 }
