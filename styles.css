@@ -28,6 +28,7 @@ body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   color: var(--text);
   background: var(--white);
+  overflow-x: hidden;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -630,6 +631,11 @@ img { max-width: 100%; display: block; }
   margin: 0 auto;
   position: relative;
   padding: 0 52px;
+  overflow: hidden;
+}
+
+#recommended-carousel-b .swiper-container {
+  overflow: hidden;
 }
 
 #recommended-carousel-b .swiper-wrapper { display: flex; }
