@@ -628,6 +628,38 @@ img { max-width: 100%; display: block; }
 
 .read-more-container { text-align: center; margin-top: 36px; }
 
+/* ======== REGISTRATION FORM ======== */
+.form-embed {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  background: var(--white);
+}
+
+.form-embed iframe {
+  width: 100%;
+  min-height: 600px;
+  border: none;
+  display: block;
+}
+
+/* ======== NAV CTA ======== */
+.nav-cta {
+  background: var(--red) !important;
+  color: var(--white) !important;
+  padding: 8px 20px;
+  border-radius: var(--radius-sm);
+  transition: background var(--transition) !important;
+}
+
+.nav-cta:hover {
+  background: var(--red-dark) !important;
+}
+
+.nav-cta::after { display: none !important; }
+
 /* ======== RECAP ======== */
 .recap-embed {
   border-radius: var(--radius);
@@ -917,6 +949,13 @@ img { max-width: 100%; display: block; }
 
   /* Recap */
   .recap-embed { border-radius: 10px; }
+
+  /* Registration */
+  .form-embed iframe { min-height: 500px; }
+  .form-embed { border-radius: 10px; }
+
+  /* Nav CTA */
+  .nav-cta { display: block; text-align: center; }
 
   /* Carousel */
   .swiper-button-prev-b,
